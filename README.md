@@ -1,5 +1,5 @@
 # dokodemo
-「どこでも図書委員」というWEBサービスです。PHP、SQLを使用しています。<br>
+「どこでも図書委員」というWEBサービスです。PHP、SQLを使用しています。
 
 【利用方法】
 　special.php, register.php, login.php, library.php
