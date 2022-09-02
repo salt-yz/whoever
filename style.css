@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+body {
+
+padding-top: 40px; /* ヘッダーの後ろに要素が隠れないようにするため */
+margin:0px;
+border:0px;/*ここが重要！余白をなくすため*/
+font-size:100%;
+font-family: "游ゴシック","ヒラギノ角ゴ ProN",sans-serif;
+color:black;
+text-align: center;
+vertical-align: middle;
+background-image:url("background.jpg");
+background-size:cover;
+background-attachment: fixed;}
+
+
+
+p{font-size:130%;
+color:black;
+}
+
+.pbig{font-size:500%;/*ポエムに使うやつ1*/
+color:white;}
+
+.pwhite{/*ポエムに使うやつ2*/
+color:white;}
+
+.pnano{font-size:80%;/*フッターに使うやつ*/
+color:white;
+}
+
+  h1 {
+  color: white;
+  font-family: "游ゴシック","ヒラギノ角ゴ ProN",sans-serif;
+ 
+  }
+  
+  input {
+  
+  font-family: "游ゴシック","ヒラギノ角ゴ ProN",sans-serif;
+  width: 160px;
+  padding: 3px;
+  margin: 5px 0;
+}
+
+/*リンク入り文字は触れると色が変わるようにする*/
+a:hover{
+  color : 82cdcd;
+}
+
+a{
+color:009b9f;
+  text-decoration: none;
+}
+
+  .flex{
+    display:inline-flex;
+    justify-content:space-around;
+    
+    height:60px;
+    width:60%;
+    max-width:800px;
+    margin:30px;
+  
+  }
+  
+   /* 図書館蔵書リストの枠*/
+  .lib{
+ 
+ margin: 0em;
+ padding:2em 20em 2em 20em;
+ background-color:rgba(255, 255, 255, 0.6);
+ text-align:left;
+ 
+  }
+  
+  
+
+/*　レトロテープ　枠 茶色　はポップ掲示専用！！*/
+.kakomi-tape2 {
+
+white-space: pre-wrap;/*textareaの改行を有効にして表示するためのやつ*/
+ position: relative;
+ width:20%;
+ margin: 1em auto;
+ padding: 1em 1em 1em 1em;
+ color: #770000;/* 文字色 */
+ background-color: #e8ddbd; /*枠背景色*/
+ box-shadow: inset 0 0 40px rgba(204, 186, 136,1), 0 2px 2px #ccc;
+}
+.kakomi-tape2::before {
+ display: block;
+ position: absolute;
+ content: "";
+ width: 140px;
+ height: 35px;
+ left: 35%;
+ top: -16px;
+ background-color: rgba(204, 186, 136,0.5);/*テープ色*/
+ box-shadow: 0 0 3px rgba(0,0,0,0.1);
+ transform: rotate( -3deg ); /*テープ角度*/
+}
+
+/*レトロテープ　枠　白色はポップ掲示専用！*/
+.kakomi-tape1 {
+
+white-space: pre-wrap;/*textareaの改行を有効にして表示するためのやつ*/
+ position: relative;
+ width:20%;
+ margin: 1em auto;
+ padding: 1em 1em 1em 1em;
+ color: black;/* 文字色 */
+ background-color: white; /*枠背景色*/
+ box-shadow: inset 0 0 40px rgba(175, 175, 176,1), 0 2px 2px #ccc;
+}
+.kakomi-tape1::before {
+ display: block;
+ position: absolute;
+ content: "";
+ width: 140px;
+ height: 35px;
+ left: 35%;
+ top: -16px;
+ background-color: rgba(212, 217, 220,0.5);/*テープ色*/
+ box-shadow: 0 0 3px rgba(0,0,0,0.1);
+ transform: rotate( 4deg ); /*テープ角度*/
+}
+
+  /* メモ　クリップ　Ａ */
+.clip-box-a {
+
+
+ position: relative;
+ margin: 0em;
+ padding: 15px 35px 15px 25px;
+ width: auto; /* ボックス幅 */
+ height:500px;
+ background-color: #fff; /* ボックス背景色 */
+ color: #555555; /* 文章色 */
+ border: 1px solid #ccc; /* 枠線 */
+ box-shadow: 1px 1px 1px #acacac; /* 影の色 */
+}
+.clip-box-a::before {
+ position: absolute;
+ content: '';
+ top: -15px;
+ right: 10px;
+ height: 55px;
+ width: 15px;
+ border: 3px solid #555555; /*クリップ色 */
+ background-color: none;
+ border-radius: 12px;
+ box-shadow: 1px 1px 2px #999;
+ transform: rotate(10deg);
+ z-index: 1;
+}
+.clip-box-a::after {
+ position: absolute;
+ content: '';
+ top: 0px;
+ width: 10px; 
+ right: 20px;
+ border: solid 5px #fff; /*背景色と同じ色にする*/
+ z-index: 2;
+}
+/*ここまで　メモ　クリップ*/
+  
+ /*ヘッダコーナー*/
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 30px; /* 高さを指定 */
+    background: #eee9e6; /* 背景色にグレーを指定 */
+    padding: 20px; /* ヘッダーに余白を指定 */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left:0;
+   
+  z-index:3;/*ヘッダーが最前面にくるように*/
+   align-items:center;
+   display:flex;
+   justify-content: space-between;}
+
+header .gnav .menu {
+  display:flex;
+ 
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+    
+    margin-left:40px;
+    margin-right:40px;
+}
+
+/*トップページ*/
+
+.book{
+ position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("book.jpg");
+  background-size:cover;
+  
+}
+
+.guide{
+display:flex;
+ justify-content:space-around;
+ text-align:center;
+}
+
+/*テキストエリア*/
+textarea {
+
+  resize: none;}
+  
+/*ポップ掲示エリア*/  
+.pop{display:flex;
+flex-wrap: wrap; /* 折返し指定 */
+
+}
+
+/*フッタ*/
+footer {
+  width: 100%;
+  height: 1px; 
+  text-align: center;
+  padding: 50px 0;
+  background-color: gray;
+}
+.footer-text {
+  color: #fff;
+}
+
+  /*アニメーションコーナー*/
+ /*フェードインアニメーション*/
+ .fadeIn {
+animation-name: fadeInAnime;
+animation-duration:3s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+ 
+ .poyopoyo {
+  animation: poyopoyo 2s ease-out infinite;
+  opacity: 1;
+}
+@keyframes poyopoyo {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.95);
+  }
+}
+
