@@ -1,4 +1,4 @@
-# dokodemo
+# 概要
 「だれでも図書委員」というWEBサービスです。PHP、SQLを使用しています。
 http://saltyz.php.xdomain.jp/top.php
 
